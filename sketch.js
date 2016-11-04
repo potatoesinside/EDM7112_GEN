@@ -372,8 +372,8 @@ function draw() {
 
 }
 
-function WindowResize() {
-  resizeCanvas(windowWidth, windowHeight);
+function windowResized() {
+        resizeCanvas(windowWidth, windowHeight);
 }
 
 function RectOP() {
@@ -526,4 +526,14 @@ function mouseReleased() {
 
 
   momentClick = millis();
+}
+
+function autoScale(targetWidth, targetHeight) {
+        var aw = windowWidth/targetWidth;
+        var ah = windowHeight/targetHeight;
+        translate(windowWidth*0.5,windowHeight*0.5);
+
+        scale( min(aw,ah) );
+        translate(-targetWidth*0.5,-targetHeight*0.5);
+
 }
