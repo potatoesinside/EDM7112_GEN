@@ -1,0 +1,18 @@
+par François Mathieu
+Projet inspiré d'une image de Brian Eno
+
+Fonctionnement :
+À l'ouverture la grosseur de plusieurs formes est générée aléatoirement.
+Les particules bleues sont positionnées et déplacées aléatoirement.
+Le déplacement de la souris du centre vers les extrémités de la fenêtre modifie les losanges pointus et légèrement la rotation des rectangles oranges.
+
+Si on tient le clic gauche enfoncé au moins 1 seconde, un nouveau rectangle est généré et positionné aléatoirement. 
+Si on tient le clic gauche enfoncé au moins 3 secondes, plusieurs éléments changent de valeur aléatoirement dans une :
+	1. la position d'un point de chaque triangle (l'intervalle de la valeur varie selon la position de mouseX)
+	2. l'angle de la rotation de toutes les formes	(l'intervalle de la valeur varie selon la position de mouseX)
+	3. la couleur du fond
+Si on tient le clic gauche enfoncé au moins 5 secondes, un nouveau rectangle rose est généré avec une grosseur, une position et un alpha aléatoires à chaque frame. 
+Si on tient le clic gauche enfoncé au moins 7,5 secondes, 2 autres rectangles roses de plus sont générés à chaque frame.
+Si on tient le clic gauche enfoncé au moins 10 secondes, le blendmode est changé pour SCREEN.
+Lorsqu'on relâche le clic gauche, la position et la grosseur de plusieurs rectangles sont changés aléatoirement et le blendmode est changé pour BLEND.
+
