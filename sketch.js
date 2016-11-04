@@ -373,7 +373,7 @@ function draw() {
 }
 
 function windowResized() {
-        resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function RectOP() {
@@ -529,11 +529,11 @@ function mouseReleased() {
 }
 
 function autoScale(targetWidth, targetHeight) {
-        var aw = windowWidth/targetWidth;
-        var ah = windowHeight/targetHeight;
-        translate(windowWidth*0.5,windowHeight*0.5);
+  var aw = windowWidth / targetWidth;
+  var ah = windowHeight / targetHeight;
+  translate(windowWidth * 0.5, windowHeight * 0.5);
 
-        scale( min(aw,ah) );
-        translate(-targetWidth*0.5,-targetHeight*0.5);
+  scale(min(aw, ah));
+  translate(-targetWidth * 0.5, -targetHeight * 0.5);
 
 }
